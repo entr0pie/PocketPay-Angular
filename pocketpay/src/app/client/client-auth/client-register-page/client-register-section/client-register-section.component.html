@@ -1,0 +1,55 @@
+<div id="login-container">
+  <div id="form-title">The new Era of Digital Banking.</div>
+
+  <div id="form-container">
+    <div>
+      <div id="input-fields">
+
+        <input
+          class="form-login-input"
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Full Name"
+          [formControl]="registerForm.controls.fullName"
+        />
+
+        <input
+          class="form-login-input"
+          type="text"
+          id="cpf"
+          name="cpf"
+          placeholder="CPF"
+          [formControl]="registerForm.controls.CPF"
+        />
+
+        <input
+          class="form-login-input"
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email"
+          [formControl]="registerForm.controls.email"
+        />
+
+        <input
+          class="form-login-input"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          [formControl]="registerForm.controls.password"
+        />
+      </div>
+
+      <button
+        id="login-button"
+        type="submit"
+        (click)="sendRegisterRequest()"
+      >
+        Register
+      </button>
+    </div>
+  </div>
+
+</div>
