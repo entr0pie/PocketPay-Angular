@@ -7,6 +7,7 @@ import { ClientRegisterPageComponent } from './client-register-page/client-regis
 import { ClientLoginSectionComponent } from './client-login-page/client-login-section/client-login-section.component';
 import { ClientRegisterSectionComponent } from './client-register-page/client-register-section/client-register-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from 'ngx-mask';
 
 
 @NgModule({
@@ -14,12 +15,17 @@ import { ReactiveFormsModule } from '@angular/forms';
     ClientLoginPageComponent,
     ClientRegisterPageComponent,
     ClientLoginSectionComponent,
-    ClientRegisterSectionComponent
+    ClientRegisterSectionComponent,
   ],
   imports: [
     CommonModule,
     ClientAuthRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxMaskDirective,
+    NgxMaskPipe
+  ],
+  providers: [
+    provideEnvironmentNgxMask(),
   ]
 })
 export class ClientAuthModule { }

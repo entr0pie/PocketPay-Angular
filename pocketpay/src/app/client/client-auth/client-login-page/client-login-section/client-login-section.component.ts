@@ -34,7 +34,7 @@ export class ClientLoginSectionComponent {
     .subscribe({
       next: (response: ClientLoginResponse) => {
         this.authService.jwt = response.access_token;
-        this.router.navigate(['/']);
+        this.router.navigateByUrl('/client/dashboard');
       },
       error: (error: any) => {
         if (error.status == 401) {

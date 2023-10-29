@@ -11,8 +11,6 @@ export class AuthService {
   private validateJWT(jwt: string): boolean {
     const decodedJWT: any = jwtDecode(jwt);
 
-    console.log(decodedJWT);
-
     if (decodedJWT.exp == null) return false;
 
     const expirationDate = new Date(0);

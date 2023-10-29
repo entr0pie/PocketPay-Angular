@@ -20,6 +20,7 @@
           id="cpf"
           name="cpf"
           placeholder="CPF"
+          [mask]="'000.000.000-00'"
           [formControl]="registerForm.controls.CPF"
         />
 
@@ -46,6 +47,7 @@
         id="login-button"
         type="submit"
         (click)="sendRegisterRequest()"
+        [disabled]="registerForm.invalid"
       >
         Register
       </button>

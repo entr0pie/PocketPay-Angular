@@ -1,0 +1,14 @@
+<mat-toolbar>
+    <div *ngIf="profile$ | async as profile">
+      <span>{{ profile.name | greetings }}</span>
+    </div>
+    <span style="flex: auto;"></span>
+    <div *ngIf="balance$ | async as balance">
+      <span>{{ balance.balance | balance }}</span>
+    </div>
+</mat-toolbar>
+
+<mat-card>
+  <mat-card-content>Simple card</mat-card-content>
+</mat-card>
+
