@@ -21,6 +21,5 @@ export class ClientLoginPageComponent {
     } catch (error) {}
 
     this.title.setTitle('Login into your Personal Account | PocketPay')
-
   }
 }
