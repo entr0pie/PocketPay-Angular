@@ -10,11 +10,13 @@ div#login-container {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 400px;
 }
 
 div#input-fields {
   justify-content: space-between;
   margin: 2% 0 2% 0;
+  width: 400px;
 }
 
 div#form-container {
@@ -36,4 +38,18 @@ a#register-link {
   font-size: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.dialog-input {
+  width: 400px;
+  align-self: center;
+}
+
+#actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-button {
+  margin: 0px 5px 0px 5px;
 }

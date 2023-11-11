@@ -8,7 +8,9 @@ import { ClientLoginSectionComponent } from './client-login-page/client-login-se
 import { ClientRegisterSectionComponent } from './client-register-page/client-register-section/client-register-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from 'ngx-mask';
-
+import { MatCardModule } from '@angular/material/card'; 
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from 'ngx-ma
     ClientAuthRoutingModule,
     ReactiveFormsModule,
     NgxMaskDirective,
-    NgxMaskPipe
+    NgxMaskPipe,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [
     provideEnvironmentNgxMask(),

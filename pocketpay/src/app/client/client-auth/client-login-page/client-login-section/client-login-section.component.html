@@ -1,37 +1,27 @@
 <div id="login-container">
-  <div id="form-title">Welcome back, Client!</div>
+  <div id="form-title"><h1>Welcome back, Client!</h1></div>
 
   <div id="form-container">
     <div>
       <div id="input-fields">
-        <input
-          class="form-login-input"
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Email"
-          [formControl]="loginForm.controls.email"
-        />
+        
+        <mat-form-field class="example-full-width dialog-input">
+          <mat-label>Email</mat-label>
+          <input [formControl]="loginForm.controls.email" matInput placeholder="email@email.com">
+        </mat-form-field>
+        <mat-form-field class="example-full-width dialog-input">
+          <mat-label>Password</mat-label>
+          <input [formControl]="loginForm.controls.password" matInput type="password" placeholder="*********">
+        </mat-form-field>
 
-        <input
-          class="form-login-input"
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Password"
-          [formControl]="loginForm.controls.password"
-        />
+        <p>
+          Not registered? <a href="/client/auth/register">Create a new account.</a>
+        </p>
+
+        <div>
+          <button (click)="sendLoginRequest()" [disabled]="loginForm.invalid" mat-raised-button color="primary">Login</button>
+        </div>
       </div>
-
-      <button
-        id="login-button"
-        type="submit"
-        [disabled]="loginForm.invalid"
-        (click)="sendLoginRequest()"
-      >
-        Login
-      </button>
     </div>
   </div>
-
 </div>
