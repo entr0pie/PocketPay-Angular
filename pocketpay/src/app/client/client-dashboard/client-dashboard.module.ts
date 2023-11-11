@@ -14,6 +14,11 @@ import { ClientDashboardDepositsComponent } from './sections/client-dashboard-de
 import { ClientDashboardWithdrawsComponent } from './sections/client-dashboard-withdraws/client-dashboard-withdraws.component'; 
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
+import { ClientTransferenceDialogComponent } from './sections/client-dashboard-transferences/client-transference-dialog/client-transference-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { MatInputModule } from '@angular/material/input'; 
 
 @NgModule({
   declarations: [
@@ -23,7 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
     ClientDashboardOverviewComponent,
     ClientDashboardTransferencesComponent,
     ClientDashboardDepositsComponent,
-    ClientDashboardWithdrawsComponent
+    ClientDashboardWithdrawsComponent,
+    ClientTransferenceDialogComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +38,11 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatTabsModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   bootstrap: [MatToolbarModule],
   providers: []
