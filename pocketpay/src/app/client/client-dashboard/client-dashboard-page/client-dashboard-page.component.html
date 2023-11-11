@@ -9,9 +9,17 @@
 </mat-toolbar>
 
 <mat-tab-group>
-  <mat-tab label="Overview"></mat-tab>
-  <mat-tab label="Transferences"> Content 2 </mat-tab>
-  <mat-tab label="Deposits"> Content 3 </mat-tab>
-  <mat-tab label="Withdraws"></mat-tab>
+  <mat-tab label="Overview">
+    <app-client-dashboard-overview></app-client-dashboard-overview>
+  </mat-tab>
+  <mat-tab label="Transferences">
+    <app-client-dashboard-transferences></app-client-dashboard-transferences>
+  </mat-tab>
+  <mat-tab label="Deposits">
+    <app-client-dashboard-deposits></app-client-dashboard-deposits>
+  </mat-tab>
+  <mat-tab label="Withdraws">
+    <app-client-dashboard-withdraws></app-client-dashboard-withdraws>
+  </mat-tab>
 </mat-tab-group>
 
