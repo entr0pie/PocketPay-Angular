@@ -55,7 +55,7 @@ export class ClientRegisterSectionComponent {
           this.clientService.login(email, password).subscribe({
             next: (response: ClientLoginResponse) => {
               this.authService.jwt = response.access_token;
-              this.router.navigate(['/']);
+              this.router.navigate(['/client/dashboard']);
             },
             error: (error) => {
               console.log("An error occurred: ", error);
