@@ -17,7 +17,7 @@ export class ClientTransferenceDialogComponent {
 
   public transferenceForm: FormGroup = new FormGroup({
     receiver: new FormControl('', [Validators.required, Validators.email]),
-    value: new FormControl(0, [Validators.required, Validators.min(0.1)])
+    value: new FormControl('', [Validators.required, Validators.min(0.1)])
   });
 
   public get receiver() {

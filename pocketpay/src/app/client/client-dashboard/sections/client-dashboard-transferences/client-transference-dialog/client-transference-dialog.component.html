@@ -18,7 +18,7 @@
 
         <div id="actions">
             <button (click)="cancelTransference()" class="action-button" mat-raised-button>Cancel</button>
-            <button (click)="sendTransference()" class="action-button" mat-raised-button color="accent">Send</button>
+            <button [disabled]="transferenceForm.invalid" (click)="sendTransference()" class="action-button" mat-raised-button color="accent">Send</button>
         </div>
 
     </div>
