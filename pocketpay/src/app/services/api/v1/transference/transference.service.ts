@@ -15,7 +15,7 @@ export class TransferenceService {
   public getTransferences(access_token: string) {
     const url = urlJoin(environment.baseURL, environment.apiURI, 'transference');
 
-    return this.http.get<GetAllTransferencesResponse>(url, {headers: {Authorization: `Bearer ${access_token}`}});
+    return this.http.get<any>(url, {headers: {Authorization: `Bearer ${access_token}`}});
   }
 
   public createTransference(receiver: string, value: number, access_token: string) {
