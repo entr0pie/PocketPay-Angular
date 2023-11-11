@@ -12,7 +12,8 @@ import { ClientDashboardOverviewComponent } from './sections/client-dashboard-ov
 import { ClientDashboardTransferencesComponent } from './sections/client-dashboard-transferences/client-dashboard-transferences.component';
 import { ClientDashboardDepositsComponent } from './sections/client-dashboard-deposits/client-dashboard-deposits.component';
 import { ClientDashboardWithdrawsComponent } from './sections/client-dashboard-withdraws/client-dashboard-withdraws.component'; 
-
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { ClientDashboardWithdrawsComponent } from './sections/client-dashboard-w
     ClientDashboardRoutingModule,
     MatToolbarModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTableModule,
+    MatButtonModule
   ],
   bootstrap: [MatToolbarModule],
   providers: []
