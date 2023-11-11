@@ -13,8 +13,6 @@ import { WalletService } from 'src/app/services/api/v1/wallet/wallet.service';
 })
 export class ClientTransferenceDialogComponent {
 
-  public isBalanceModified: boolean = false;
-
   public transferenceForm: FormGroup = new FormGroup({
     receiver: new FormControl('', [Validators.required, Validators.email]),
     value: new FormControl('', [Validators.required, Validators.min(0.1)])
