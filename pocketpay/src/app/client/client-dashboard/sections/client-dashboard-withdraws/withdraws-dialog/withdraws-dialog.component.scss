@@ -1,0 +1,19 @@
+p {
+  font-size: 20px;
+}
+
+.dialog-input{
+  width: 400px;
+  align-self: center;
+  margin-left: 50px;
+
+}
+
+#actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.action-button {
+  margin: 0px 20px 20px 5px;
+}
