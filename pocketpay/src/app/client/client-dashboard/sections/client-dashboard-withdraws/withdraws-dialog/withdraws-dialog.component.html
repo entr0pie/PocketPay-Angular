@@ -1,0 +1,17 @@
+
+<h1 mat-dialog-title>Create Withdraw</h1>
+<div [formGroup]="WithdrawForm">
+
+  <p>
+    <mat-form-field appearance="fill" class="dialog-input">
+      <mat-label>Value</mat-label>
+      <input [formControl]="value" matInput placeholder="Value">
+    </mat-form-field>
+  </p>
+
+  <div id="actions">
+    <button (click)="cancelWithdraw()" class="action-button" mat-raised-button>Cancel</button>
+    <button [disabled]="WithdrawForm.invalid" (click)="sendWithdraw()" class="action-button" mat-raised-button color="accent">Send</button>
+  </div>
+
+</div>

@@ -11,14 +11,16 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { ClientDashboardOverviewComponent } from './sections/client-dashboard-overview/client-dashboard-overview.component';
 import { ClientDashboardTransferencesComponent } from './sections/client-dashboard-transferences/client-dashboard-transferences.component';
 import { ClientDashboardDepositsComponent } from './sections/client-dashboard-deposits/client-dashboard-deposits.component';
-import { ClientDashboardWithdrawsComponent } from './sections/client-dashboard-withdraws/client-dashboard-withdraws.component'; 
+import { ClientDashboardWithdrawsComponent } from './sections/client-dashboard-withdraws/client-dashboard-withdraws.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { ClientTransferenceDialogComponent } from './sections/client-dashboard-transferences/client-transference-dialog/client-transference-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatFormFieldModule } from '@angular/material/form-field'; 
-import { MatInputModule } from '@angular/material/input'; 
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { WithdrawsDialogComponent } from './sections/client-dashboard-withdraws/withdraws-dialog/withdraws-dialog.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { MatInputModule } from '@angular/material/input';
     ClientDashboardTransferencesComponent,
     ClientDashboardDepositsComponent,
     ClientDashboardWithdrawsComponent,
-    ClientTransferenceDialogComponent
+    ClientTransferenceDialogComponent,
+    WithdrawsDialogComponent,
+
   ],
   imports: [
     CommonModule,
@@ -45,6 +49,6 @@ import { MatInputModule } from '@angular/material/input';
     ReactiveFormsModule
   ],
   bootstrap: [MatToolbarModule],
-  providers: []
+  providers: [DatePipe]
 })
 export class ClientDashboardModule { }
