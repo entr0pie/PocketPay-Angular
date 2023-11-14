@@ -1,1 +1,38 @@
-<p>seller-register-section works!</p>
+<div id="login-container">
+    <div id="form-title"><h1>The new Era of Digital Banking.</h1></div>
+  
+    <div id="form-container">
+      <div>
+        <div id="input-fields">
+          
+          <mat-form-field class="example-full-width dialog-input">
+            <mat-label>Full Name</mat-label>
+            <input [formControl]="fullName" matInput placeholder="John Doe">
+          </mat-form-field>
+          <mat-form-field class="example-full-width dialog-input">
+            <mat-label>CNPJ</mat-label>
+            <input [mask]="'00000000000000'" [formControl]="CNPJ" matInput placeholder="000.000.000-00">
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width dialog-input">
+            <mat-label>Email</mat-label>
+            <input [formControl]="email" matInput placeholder="email@email.com">
+          </mat-form-field>
+          <mat-form-field class="example-full-width dialog-input">
+            <mat-label>Password</mat-label>
+            <input [formControl]="password" matInput type="password" placeholder="*********">
+          </mat-form-field>
+  
+  
+          <p>
+            Already registered? <a href="/seller/auth/login">Login into your account.</a>
+          </p>
+  
+          <div>
+            <button (click)="sendRegisterRequest()" [disabled]="registerForm.invalid" mat-raised-button color="primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
