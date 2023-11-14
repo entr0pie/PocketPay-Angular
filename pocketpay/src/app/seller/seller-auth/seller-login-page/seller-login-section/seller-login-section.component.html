@@ -1,10 +1,10 @@
 <div id="login-container">
     <div id="form-title"><h1>Welcome back, Seller!</h1></div>
-  
+
     <div id="form-container">
       <div>
         <div id="input-fields">
-          
+
           <mat-form-field class="example-full-width dialog-input">
             <mat-label>Email</mat-label>
             <input [formControl]="loginForm.controls.email" matInput placeholder="email@email.com">
@@ -13,11 +13,11 @@
             <mat-label>Password</mat-label>
             <input [formControl]="loginForm.controls.password" matInput type="password" placeholder="*********">
           </mat-form-field>
-  
+
           <p>
             Not registered? <a href="/client/auth/register">Create a new account.</a>
           </p>
-  
+
           <div>
             <button (click)="sendLoginRequest()" [disabled]="loginForm.invalid" mat-raised-button color="primary">Login</button>
           </div>
@@ -25,4 +25,3 @@
       </div>
     </div>
   </div>
-  

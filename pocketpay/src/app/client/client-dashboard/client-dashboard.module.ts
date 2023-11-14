@@ -49,6 +49,7 @@ import { DatePipe } from '@angular/common';
     ReactiveFormsModule
   ],
   bootstrap: [MatToolbarModule],
-  providers: [DatePipe]
+  providers: [DatePipe],
+
 })
 export class ClientDashboardModule { }

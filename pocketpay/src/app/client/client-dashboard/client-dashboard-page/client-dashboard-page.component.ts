@@ -54,11 +54,6 @@ export class ClientDashboardPageComponent {
     return this.profileService.getProfile(jwt);
   }
 
-  showBalance = true;
-
-  toggleBalance() {
-    this.showBalance = this.showBalance!
-  }
 
 
 }

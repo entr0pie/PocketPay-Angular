@@ -4,9 +4,10 @@ import { CommonModule } from '@angular/common';
 import { SellerRoutingModule } from './seller-routing.module';
 
 
+
 @NgModule({
   declarations: [
-    
+
   ],
   imports: [
     CommonModule,

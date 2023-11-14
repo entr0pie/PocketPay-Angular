@@ -1,0 +1,24 @@
+<mat-toolbar>
+  <div *ngIf="profile$ | async as profile">
+    <span>{{ profile.name | greetings }}</span>
+  </div>
+  <span style="flex: auto;"></span>
+  <div *ngIf="balance$ | async as balance">
+      <span> {{ balance.balance | balance }}</span>
+  </div>
+</mat-toolbar>
+
+<mat-tab-group>
+  <mat-tab label="Overview">
+    <app-seller-dashboard-overview></app-seller-dashboard-overview>
+  </mat-tab>
+  <mat-tab label="Transferences">
+    <app-seller-dashboard-transferences></app-seller-dashboard-transferences>
+  </mat-tab>
+  <mat-tab label="Deposits">
+    <app-seller-dashboard-deposits></app-seller-dashboard-deposits>
+  </mat-tab>
+  <mat-tab label="Withdraws">
+    <app-seller-dashboard-withdraws></app-seller-dashboard-withdraws>
+  </mat-tab>
+</mat-tab-group>
