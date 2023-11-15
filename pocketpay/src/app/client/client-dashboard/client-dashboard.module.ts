@@ -21,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { WithdrawsDialogComponent } from './sections/client-dashboard-withdraws/withdraws-dialog/withdraws-dialog.component';
 import { DatePipe } from '@angular/common';
+import { DepositDialogComponent } from './sections/client-dashboard-deposits/deposit-dialog/deposit-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { DatePipe } from '@angular/common';
     ClientDashboardWithdrawsComponent,
     ClientTransferenceDialogComponent,
     WithdrawsDialogComponent,
+    DepositDialogComponent,
 
   ],
   imports: [
