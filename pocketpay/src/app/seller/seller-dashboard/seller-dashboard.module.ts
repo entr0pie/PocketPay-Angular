@@ -17,6 +17,7 @@ import { SellerDashboardOverviewComponent } from './sections/seller-dashboard-ov
 import { SellerDashboardTransferencesComponent } from './sections/seller-dashboard-transferences/seller-dashboard-transferences.component';
 import { SellerDashboardDepositsComponent } from './sections/seller-dashboard-deposits/seller-dashboard-deposits.component';
 import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-withdraws/seller-dashboard-withdraws.component';
+import { TransferenceDialogComponent } from './sections/seller-dashboard-transferences/transference-dialog/transference-dialog.component';
 
 
 
@@ -28,7 +29,8 @@ import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-w
     SellerDashboardOverviewComponent,
     SellerDashboardTransferencesComponent,
     SellerDashboardDepositsComponent,
-    SellerDashboardWithdrawsComponent
+    SellerDashboardWithdrawsComponent,
+    TransferenceDialogComponent
   ],
   imports: [
     CommonModule,
