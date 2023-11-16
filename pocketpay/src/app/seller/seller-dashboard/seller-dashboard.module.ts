@@ -17,6 +17,8 @@ import { SellerDashboardOverviewComponent } from './sections/seller-dashboard-ov
 import { SellerDashboardTransferencesComponent } from './sections/seller-dashboard-transferences/seller-dashboard-transferences.component';
 import { SellerDashboardDepositsComponent } from './sections/seller-dashboard-deposits/seller-dashboard-deposits.component';
 import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-withdraws/seller-dashboard-withdraws.component';
+import { DepositDialogComponent } from './sections/seller-dashboard-deposits/deposit-dialog/deposit-dialog.component';
+import { WithdrawsDialogComponent } from './sections/seller-dashboard-withdraws/withdraws-dialog/withdraws-dialog.component';
 
 
 
@@ -28,7 +30,9 @@ import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-w
     SellerDashboardOverviewComponent,
     SellerDashboardTransferencesComponent,
     SellerDashboardDepositsComponent,
-    SellerDashboardWithdrawsComponent
+    SellerDashboardWithdrawsComponent,
+    DepositDialogComponent,
+    WithdrawsDialogComponent
   ],
   imports: [
     CommonModule,
@@ -47,3 +51,4 @@ import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-w
   providers: [DatePipe]
 })
 export class SellerDashboardModule { }
+

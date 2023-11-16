@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.buttom-create-deposit {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.idDeposit, th {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 4px 2px 4px #7B1FA2;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #ffffff;
+
+}
+
+.idDeposit, td {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #ffffff;
+}
