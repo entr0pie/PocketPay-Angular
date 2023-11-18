@@ -6,6 +6,13 @@
   <div *ngIf="balance$ | async as balance">
       <span> {{ balance.balance | balance }}</span>
   </div>
+  
+  <div style="padding-left: 10px;">
+    <button mat-button [matMenuTriggerFor]="menu">Settings</button>
+    <mat-menu #menu="matMenu">
+      <button (click)="logout()" mat-menu-item>Logout</button>
+    </mat-menu>
+  </div>
 </mat-toolbar>
 
 <mat-tab-group>

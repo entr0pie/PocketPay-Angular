@@ -18,7 +18,7 @@ import { SellerDashboardTransferencesComponent } from './sections/seller-dashboa
 import { SellerDashboardDepositsComponent } from './sections/seller-dashboard-deposits/seller-dashboard-deposits.component';
 import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-withdraws/seller-dashboard-withdraws.component';
 import { TransferenceDialogComponent } from './sections/seller-dashboard-transferences/transference-dialog/transference-dialog.component';
-
+import { MatMenu, MatMenuModule } from '@angular/material/menu'; 
 
 
 @NgModule({
@@ -43,7 +43,8 @@ import { TransferenceDialogComponent } from './sections/seller-dashboard-transfe
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatMenuModule
   ],
   bootstrap: [MatToolbarModule],
   providers: [DatePipe]

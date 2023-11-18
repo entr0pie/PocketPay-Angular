@@ -40,4 +40,8 @@ export class AuthService {
 
     sessionStorage.setItem('session', jwt);
   }
+
+  logout() {
+    sessionStorage.removeItem('session');
+  }
 }

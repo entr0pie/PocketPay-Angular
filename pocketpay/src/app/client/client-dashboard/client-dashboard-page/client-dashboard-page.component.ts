@@ -55,5 +55,9 @@ export class ClientDashboardPageComponent {
   }
 
 
+  public logout() {
+    this.authService.logout();
+    this.router.navigateByUrl('/client/auth/login');
+  }
 
 }

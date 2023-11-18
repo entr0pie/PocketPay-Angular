@@ -51,5 +51,10 @@ export class SellerDashboardPageComponent {
     return this.ProfileService.getProfile(jwt);
   }
 
+  public logout() {
+    this.AuthService.logout();
+    this.Router.navigateByUrl('/seller/auth/login');
+  }
+
 
 }
