@@ -11,6 +11,12 @@ div#login-container {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 400px;
+  margin: 0 auto;
+  
+  border-width: 5px;
+  border-style: solid;
+  border-color: #787877;
+  border-radius: 5%;
 }
 
 div#input-fields {

@@ -1,0 +1,14 @@
+#background {
+    height:100%;
+    width:100%;
+    overflow:hidden; 
+    filter: blur(10px); /* Adjust the blur value as needed */
+    -webkit-filter: blur(10px); /* For Safari support */
+    background-image: url("/assets/img/japan.png");
+    z-index: -1;
+}
+
+#action-section {
+    filter: none !important; /* Adjust the blur value as needed */
+    -webkit-filter: none !important; /* For Safari support */
+}
