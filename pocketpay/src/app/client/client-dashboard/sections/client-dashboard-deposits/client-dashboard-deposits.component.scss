@@ -1,5 +1,5 @@
 
-
+/*
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
@@ -23,4 +23,22 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   border: 1px solid #ffffff;
+}
+*/
+#table, th, td{
+  padding: 10px 30px;
+  border: 1px solid rgb(245, 203, 255);
+}
+
+#table, th {
+  font-size: large;
+}
+
+.buttom-create-deposit {
+  background-color: #7b1fa2;
+  position: fixed;
+  padding: 5px 10px;
+  bottom: 20px;
+  right: 10px;
+  box-shadow: 2px 0px 8px #222;
 }

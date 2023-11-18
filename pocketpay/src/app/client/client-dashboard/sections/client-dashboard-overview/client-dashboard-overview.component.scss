@@ -7,5 +7,14 @@
 }
 
 .col-width-type {
-  width: 50%;
+  width: 30%;
+}
+
+#table, th, td{
+  padding: 10px 30px;
+  border: 1px solid rgb(245, 203, 255);
+}
+
+#table, th {
+  font-size: large;
 }

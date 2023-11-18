@@ -8,7 +8,7 @@
     </div>
 
 <div style="padding-left: 10px;">
-  <button mat-button [matMenuTriggerFor]="menu">Settings</button>
+  <button mat-button [matMenuTriggerFor]="menu" class="settings">Settings</button>
   <mat-menu #menu="matMenu">
     <button (click)="logout()" mat-menu-item>Logout</button>
   </mat-menu>
