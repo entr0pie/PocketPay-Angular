@@ -19,6 +19,9 @@ import { SellerDashboardDepositsComponent } from './sections/seller-dashboard-de
 import { SellerDashboardWithdrawsComponent } from './sections/seller-dashboard-withdraws/seller-dashboard-withdraws.component';
 import { TransferenceDialogComponent } from './sections/seller-dashboard-transferences/transference-dialog/transference-dialog.component';
 import { MatMenu, MatMenuModule } from '@angular/material/menu'; 
+import { DepositDialogComponent } from './sections/seller-dashboard-deposits/deposit-dialog/deposit-dialog.component';
+import { WithdrawsDialogComponent } from './sections/seller-dashboard-withdraws/withdraws-dialog/withdraws-dialog.component';
+
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { MatMenu, MatMenuModule } from '@angular/material/menu';
     SellerDashboardTransferencesComponent,
     SellerDashboardDepositsComponent,
     SellerDashboardWithdrawsComponent,
-    TransferenceDialogComponent
+    TransferenceDialogComponent,
+    DepositDialogComponent,
+    WithdrawsDialogComponent
   ],
   imports: [
     CommonModule,
@@ -50,3 +55,4 @@ import { MatMenu, MatMenuModule } from '@angular/material/menu';
   providers: [DatePipe]
 })
 export class SellerDashboardModule { }
+

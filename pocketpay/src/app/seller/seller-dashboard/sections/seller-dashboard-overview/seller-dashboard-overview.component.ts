@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AuthService } from 'src/app/services/api/v1/auth/auth.service';
 import { DatePipe } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-seller-dashboard-overview',
@@ -10,6 +13,7 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./seller-dashboard-overview.component.scss']
 })
 export class SellerDashboardOverviewComponent {
+  public transactions$!: Observable<any>;
 
   private access_token!:string;
 
@@ -17,10 +21,11 @@ export class SellerDashboardOverviewComponent {
   public displayedColumns: String[] = ['id', 'timestamp', 'type'];
 
   constructor(
+    private router: Router,
     private authService: AuthService,
     private transactionservice: TransactionService,
-    private DatePipe: DatePipe
-
+    private DatePipe: DatePipe,
+    private dialog: MatDialog
   ){
     this.access_token = authService.jwt;
     this.overview$ = this.transactionservice.getAllTransactions(this.access_token);
@@ -42,4 +47,5 @@ export class SellerDashboardOverviewComponent {
         return 'Unknown';
     }
   }
+
 }

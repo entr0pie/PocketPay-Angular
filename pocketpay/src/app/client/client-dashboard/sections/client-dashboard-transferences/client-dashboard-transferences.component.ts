@@ -33,7 +33,7 @@ export class ClientDashboardTransferencesComponent {
 
   public openTransferenceDialog(): void {
     let dialog = this.dialog.open(ClientTransferenceDialogComponent, {width: '500px'});
-    
+
   }
 
 }

@@ -1,1 +1,28 @@
-<p>seller-dashboard-withdraws works!</p>
+
+<mat-card>
+  <table mat-table [dataSource]="Withdraws" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="idTransaction" class="idTransaction">
+      <th mat-header-cell *matHeaderCellDef> ID Withdraw </th>
+      <td *matCellDef="let element"> {{element.idTransaction}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="timestamp">
+      <th mat-header-cell *matHeaderCellDef> Date</th>
+      <td mat-cell *matCellDef="let element"> {{ formatDate(element.timestamp) }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef> Value</th>
+      <td mat-cell *matCellDef="let element"> R$ {{element.value}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <div class="buttom-create-withdraw">
+    <button mat-button (click)="OpenWithdrawDialog()">Create Withdraw</button>
+  </div>
+</mat-card>
+
