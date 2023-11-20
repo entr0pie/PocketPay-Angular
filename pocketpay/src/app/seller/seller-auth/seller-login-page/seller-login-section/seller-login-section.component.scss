@@ -1,55 +1,65 @@
 
 div#login-container {
-    background-color: #282829;
-    padding: 2%;
-    border-radius: 5px;
-  
-    /* https://stackoverflow.com/a/23703655/13647948 */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 400px;
+  background-color: #282829;
+  padding: 2%;
+  border-radius: 5px;
+
+  /* https://stackoverflow.com/a/23703655/13647948 */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 400px;
+  margin: 0 auto;
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: #787877;
+  border-radius: 5%;
   }
-  
+
   div#input-fields {
     justify-content: space-between;
     margin: 2% 0 2% 0;
     width: 400px;
   }
-  
+
   div#form-container {
     width: 60%;
   }
-  
+
   .form-login-input {
     width: 100%;
     margin: 2% 0 2% 0;
   }
-  
+
   button#login-button {
     bottom: 0;
     left: 0;
   }
-  
+
+  #client {
+    margin-left: 30px;
+  }
+
   a#register-link {
     position: absolute;
     font-size: 10px;
     color: #fff;
     text-decoration: none;
   }
-  
+
   .dialog-input {
     width: 400px;
     align-self: center;
   }
-  
+
   #actions {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .action-button {
     margin: 0px 5px 0px 5px;
   }

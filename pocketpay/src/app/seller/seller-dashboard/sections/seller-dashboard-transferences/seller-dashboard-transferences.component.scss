@@ -3,3 +3,19 @@
   bottom: 10px;
   right: 10px;
 }
+
+.date, th {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 4px 2px 4px #7B1FA2;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #ffffff;
+
+}
+
+.date, td {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #ffffff;
+}

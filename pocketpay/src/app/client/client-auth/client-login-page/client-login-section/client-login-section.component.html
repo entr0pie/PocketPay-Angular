@@ -4,7 +4,7 @@
   <div id="form-container">
     <div>
       <div id="input-fields">
-        
+
         <mat-form-field class="example-full-width dialog-input">
           <mat-label>Email</mat-label>
           <input [formControl]="loginForm.controls.email" matInput placeholder="email@email.com">
@@ -20,6 +20,7 @@
 
         <div>
           <button (click)="sendLoginRequest()" [disabled]="loginForm.invalid" mat-raised-button color="primary">Login</button>
+          <button routerLink="/seller/auth/login" mat-raised-button color="primary" id="seller">Seller</button>
         </div>
       </div>
     </div>

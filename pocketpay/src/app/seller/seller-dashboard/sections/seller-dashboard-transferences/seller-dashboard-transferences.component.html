@@ -1,6 +1,6 @@
 <mat-card>
   <table mat-table [dataSource]="transferences$" class="mat-elevation-z8">
-      <ng-container matColumnDef="timestamp">
+      <ng-container matColumnDef="timestamp" class="date">
           <th mat-header-cell *matHeaderCellDef> Date </th>
           <td mat-cell *matCellDef="let element"> {{formatDate(element.timestamp) }} </td>
       </ng-container>

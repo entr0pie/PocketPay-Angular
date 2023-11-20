@@ -13,7 +13,6 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./seller-dashboard-transferences.component.scss']
 })
 export class SellerDashboardTransferencesComponent {
-  [x: string]: any;
 
   public transferences$!: Observable<any>;
   public displayedColumns: String[] = ['timestamp', 'receiver', 'value'];

@@ -6,6 +6,7 @@ import { AuthService } from 'src/app/services/api/v1/auth/auth.service';
 import { GetAllTransferencesResponse } from 'src/app/services/api/v1/transference/interfaces/get-all-transferences-response';
 import { TransferenceService } from 'src/app/services/api/v1/transference/transference.service';
 import { ClientTransferenceDialogComponent } from './client-transference-dialog/client-transference-dialog.component';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-client-dashboard-transferences',
@@ -21,7 +22,8 @@ export class ClientDashboardTransferencesComponent {
     private router: Router,
     private authService: AuthService,
     private transferenceService: TransferenceService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private DatePipe: DatePipe
   ) {
     try {
       const access_token = this.authService.jwt;
@@ -33,7 +35,10 @@ export class ClientDashboardTransferencesComponent {
 
   public openTransferenceDialog(): void {
     let dialog = this.dialog.open(ClientTransferenceDialogComponent, {width: '500px'});
+  }
 
+  public formatDate(date: string) {
+    return this.DatePipe.transform(date, 'dd/MM/yyyy HH:mm:ss');
   }
 
 }

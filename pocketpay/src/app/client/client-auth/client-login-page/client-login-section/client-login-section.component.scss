@@ -12,7 +12,7 @@ div#login-container {
   transform: translate(-50%, -50%);
   width: 400px;
   margin: 0 auto;
-  
+
   border-width: 5px;
   border-style: solid;
   border-color: #787877;
@@ -39,6 +39,9 @@ button#login-button {
   left: 0;
 }
 
+#seller {
+  margin-left: 30px;
+}
 a#register-link {
   position: absolute;
   font-size: 10px;

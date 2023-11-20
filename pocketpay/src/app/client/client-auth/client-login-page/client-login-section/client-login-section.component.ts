@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { AuthService } from 'src/app/services/api/v1/auth/auth.service';
 import { ClientService } from 'src/app/services/api/v1/client/client.service';
 import { ClientLoginResponse } from 'src/app/services/api/v1/client/interfaces/client-login-response';
@@ -21,7 +21,8 @@ export class ClientLoginSectionComponent {
     private clientService: ClientService,
     private authService: AuthService,
     private form: FormBuilder,
-    private router: Router
+    private router: Router,
+    private RouterModule : RouterModule
   ) {}
 
   sendLoginRequest() {
