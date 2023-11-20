@@ -23,6 +23,7 @@ import { WithdrawsDialogComponent } from './sections/client-dashboard-withdraws/
 import { DatePipe } from '@angular/common';
 import { DepositDialogComponent } from './sections/client-dashboard-deposits/deposit-dialog/deposit-dialog.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar'; 
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSnackBarModule
   ],
   bootstrap: [MatToolbarModule],
   providers: [DatePipe],

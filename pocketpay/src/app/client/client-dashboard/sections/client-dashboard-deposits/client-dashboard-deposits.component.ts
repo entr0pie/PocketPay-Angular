@@ -9,6 +9,9 @@ import { DatePipe } from '@angular/common';
 import { Deposit } from 'src/app/services/api/v1/deposit/interfaces/getdeposits-response';
 import { AuthService } from 'src/app/services/api/v1/auth/auth.service';
 import { DepositDialogComponent } from './deposit-dialog/deposit-dialog.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-client-dashboard-deposits',
   templateUrl: './client-dashboard-deposits.component.html',
@@ -25,7 +28,9 @@ export class ClientDashboardDepositsComponent {
     private DepositService: DepositService,
     private AuthService: AuthService,
     private Router: Router,
-    private DatePipe: DatePipe
+    private DatePipe: DatePipe,
+    private snackBar: MatSnackBar,
+    private location: Location
   ) {
     try {
       this.access_token = this.AuthService.jwt;
@@ -41,5 +46,8 @@ export class ClientDashboardDepositsComponent {
 
   public OpenDepositDialog(): void {
     let Dialog = this.dialog.open(DepositDialogComponent, {width: '500px'});
+    Dialog.afterClosed().subscribe(result => {
+      let snackBarRef = this.snackBar.open('Depósito realizado com sucesso!', 'Fechar', {duration: 3000});
+    })
   }
 }
